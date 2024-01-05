@@ -771,7 +771,9 @@
 	.change-menu-header-bg {
 		width: 710px;
 		height: 760px;
-		transform: translate(-60%, -25%);
+		will-change: transform;
+		transform: translate(-60%, -25%) scale(1);
+		transition: transform 0.5s ease;
 	}
 
 	@keyframes slideIn {
@@ -1280,7 +1282,9 @@
 	.change-menu-header-bg {
 		width: 730px;
 		height: 760px;
-		transform: translate(-60%, -25%);
+		will-change: transform;
+		transform: translate(-60%, -25%) scale(1);
+		transition: transform 0.5s ease;
 	}
 
 	@keyframes slideIn {
@@ -1844,16 +1848,16 @@
 	}
 
 	.nav-buttons-container-desktop {
-		display: flex;
+		display: none;
 		gap: 30px;
 		margin-top: 5px;
 	}
 }
 
 .profile {
-	display: none;
+	display: block;
 }
 
 .nav-buttons-container-mobile {
-	display: block;
+	display: none;
 }
