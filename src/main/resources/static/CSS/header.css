@@ -282,17 +282,6 @@
 		transition: transform 0.5s ease;
 	}
 
-	@keyframes slideIn {
-		from {
-			opacity: 0;
-			transform: translateY(10px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
 	.primary-navigation {
 		text-align: center;
 		font-size: 20px;
@@ -331,7 +320,6 @@
 		color: var(--light-brand-color);
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 2px;
-		transition: all 0.5s;
 		text-decoration: none;
 	}
 
@@ -370,7 +358,6 @@
 		visibility: visible;
 		opacity: 1;
 		padding-bottom: 20px;
-		animation: slideIn 0.5s ease-in-out;
 	}
 
 	nav.primary-navigation ul li ul li {
@@ -383,7 +370,6 @@
 
 	nav.primary-navigation ul li ul li .nav-link:hover {
 		padding-left: 10px;
-		transition: all 0.5s ease;
 	}
 
 	.nav-buttons-container-desktop {
@@ -408,7 +394,6 @@
 		border-radius: 50%;
 		width: 31px;
 		height: 31px;
-		transition: all 0.5s;
 		font-size: 18px;
 	}
 
