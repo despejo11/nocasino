@@ -12,6 +12,7 @@
 
 	.menu-header-bar {
 		height: 5px;
+		width: 100%;
 		background-color: var(--brand-color);
 		display: block;
 		border-radius: 5px;
@@ -232,6 +233,7 @@
 	}
 
 	.menu-header-bg {
+		transform: translateZ(0);
 		z-index: 1;
 		width: 0;
 		height: 0;
