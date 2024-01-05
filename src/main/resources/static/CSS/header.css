@@ -233,9 +233,12 @@
 	}
 
 	.menu-header-bg {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
 		z-index: 1;
 		width: 0;
 		height: 0;
+		margin: 30px 0 20px 20px;
 		background: radial-gradient(
 			circle,
 			var(--brand-color),
