@@ -245,6 +245,7 @@
 		border-radius: 50%;
 		transition: 0.5s ease;
 		border: 2px solid var(--dark-brand-color);
+		position: fixed;
 	}
 
 	.menu-header-bg.closed {
@@ -737,6 +738,7 @@
 		border-radius: 50%;
 		transition: 0.5s ease;
 		border: 2px solid var(--dark-brand-color);
+		position: fixed;
 	}
 
 	.menu-header-bg.closed {
@@ -1246,6 +1248,7 @@
 		border-radius: 50%;
 		transition: 0.5s ease;
 		border: 2px solid var(--dark-brand-color);
+		position: fixed;
 	}
 
 	.menu-header-bg.closed {
