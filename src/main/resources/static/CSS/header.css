@@ -234,8 +234,8 @@
 
 	.menu-header-bg {
 		z-index: 1;
-		transform: translate(0, 0);
-		margin: 30px 0 20px 20px;
+		width: 0;
+		height: 0;
 		background: radial-gradient(
 			circle,
 			var(--brand-color),
