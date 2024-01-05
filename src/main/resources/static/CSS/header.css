@@ -233,9 +233,7 @@
 	}
 
 	.menu-header-bg {
-		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
-		z-index: 1;
 		width: 0;
 		height: 0;
 		margin: 30px 0 20px 20px;
@@ -245,7 +243,7 @@
 			var(--brand-hover-color)
 		);
 		border-radius: 50%;
-		transition: 0.5s ease;
+		transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
 		border: 2px solid var(--dark-brand-color);
 	}
 
