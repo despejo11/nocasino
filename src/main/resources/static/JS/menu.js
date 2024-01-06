@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+	const menuBg = document.getElementById('menu-header-bg')
 	const menuBar = document.getElementById('menu-header-bar')
 	const nav = document.getElementById('menu-header-nav')
-	const menuBg = document.getElementById('menu-header-bg')
-
-	document.body.addEventListener('click', event => {
-		if (!menuBar.contains(event.target) && !nav.contains(event.target)) {
-			nav.classList.remove('open')
-		}
-	})
 
 	if (menuBar.classList.contains('change-menu-header')) {
 		menuBg.classList.remove('closed')

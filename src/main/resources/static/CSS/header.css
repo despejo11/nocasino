@@ -416,11 +416,6 @@
 		color: var(--light-hover-color);
 	}
 
-	.icon-profile:hover {
-		background-color: var(--light-hover-color);
-		color: var(--light-brand-color);
-	}
-
 	.icon-dropdown-profile {
 		color: var(--brand-hover-color);
 	}
@@ -908,11 +903,6 @@
 
 	.icon-profile {
 		color: var(--light-hover-color);
-	}
-
-	.icon-profile:hover {
-		color: var(--light-brand-color);
-		background-color: var(--light-hover-color);
 	}
 
 	.icon-dropdown-profile {
@@ -1419,11 +1409,6 @@
 
 	.icon-profile {
 		color: var(--light-hover-color);
-	}
-
-	.icon-profile:hover {
-		color: var(--light-brand-color);
-		background-color: var(--light-hover-color);
 	}
 
 	.icon-dropdown-profile {
