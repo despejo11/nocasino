@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.body.addEventListener('click', event => {
 		if (!menuBar.contains(event.target) && !nav.contains(event.target)) {
-			menuBar.classList.remove('change-menu-header')
 			nav.classList.remove('open')
-			menuBg.classList.add('closed')
 		}
 	})
 
