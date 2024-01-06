@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const menuBg = document.getElementById('menu-header-bg')
 	const menuBar = document.getElementById('menu-header-bar')
 	const nav = document.getElementById('menu-header-nav')
+	const menuBg = document.getElementById('menu-header-bg')
+
+	document.body.addEventListener('click', event => {
+		if (!menuBar.contains(event.target) && !nav.contains(event.target)) {
+			menuBar.classList.remove('change-menu-header')
+			nav.classList.remove('open')
+			menuBg.classList.add('closed')
+		}
+	})
 
 	if (menuBar.classList.contains('change-menu-header')) {
 		menuBg.classList.remove('closed')

@@ -282,6 +282,17 @@
 		transition: transform 0.5s ease;
 	}
 
+	@keyframes slideIn {
+		from {
+			opacity: 0;
+			transform: translateY(10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
 	.primary-navigation {
 		text-align: center;
 		font-size: 20px;
@@ -314,12 +325,24 @@
 		text-align: center;
 	}
 
+	.nav-link-hold {
+		font-size: 18px;
+		color: var(--light-color);
+		letter-spacing: 3px;
+		font-family: 'Lilita One', sans-serif;
+	}
+
+	.nav-link-hold i {
+		color: var(--brand-color);
+	}
+
 	nav.primary-navigation .nav-link,
 	nav.primary-navigation .dropdown-link {
 		display: block;
 		color: var(--light-brand-color);
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 2px;
+		transition: all 0.5s;
 		text-decoration: none;
 	}
 
@@ -358,6 +381,7 @@
 		visibility: visible;
 		opacity: 1;
 		padding-bottom: 20px;
+		animation: slideIn 0.5s ease-in-out;
 	}
 
 	nav.primary-navigation ul li ul li {
@@ -370,6 +394,7 @@
 
 	nav.primary-navigation ul li ul li .nav-link:hover {
 		padding-left: 10px;
+		transition: all 0.5s ease;
 	}
 
 	.nav-buttons-container-desktop {
@@ -394,16 +419,12 @@
 		border-radius: 50%;
 		width: 31px;
 		height: 31px;
+		transition: all 0.5s;
 		font-size: 18px;
 	}
 
 	.icon-profile {
 		color: var(--light-hover-color);
-	}
-
-	.icon-profile:hover {
-		color: var(--light-brand-color);
-		background-color: var(--light-hover-color);
 	}
 
 	.icon-dropdown-profile {
@@ -1775,6 +1796,10 @@
 		font-size: 17px;
 	}
 
+	.nav-link-hold {
+		display: none;
+	}
+
 	.dropdown-id {
 		color: var(--brand-color);
 		padding-top: 10px;
@@ -1841,6 +1866,10 @@
 
 .profile {
 	display: block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .nav-buttons-container-mobile {
