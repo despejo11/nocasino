@@ -47,6 +47,10 @@ img {
 	max-width: 1200px;
 }
 
+a {
+	text-decoration: none;
+}
+
 @media (max-width: 319.9px) {
 	.body-global {
 		display: none;

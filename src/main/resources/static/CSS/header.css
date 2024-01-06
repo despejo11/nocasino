@@ -106,16 +106,6 @@
 		margin-top: 20px;
 	}
 
-	.button-menu-header a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
-	.button-menu-header-sign a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
 	.button-menu-header .icon-button-menu {
 		background: var(--light-brand-color);
 		margin-left: 1em;
@@ -603,16 +593,6 @@
 		padding-right: 3.3em;
 		cursor: pointer;
 		margin-top: 20px;
-	}
-
-	.button-menu-header a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
-	.button-menu-header-sign a {
-		text-decoration: none;
-		color: var(--white-color);
 	}
 
 	.button-menu-header .icon-button-menu {
@@ -1125,16 +1105,6 @@
 		margin-top: 20px;
 	}
 
-	.button-menu-header a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
-	.button-menu-header-sign a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
 	.button-menu-header .icon-button-menu {
 		background: var(--light-brand-color);
 		margin-left: 1em;
@@ -1604,16 +1574,6 @@
 		padding-right: 3.3em;
 		cursor: pointer;
 		margin-top: 20px;
-	}
-
-	.button-menu-header a {
-		text-decoration: none;
-		color: var(--white-color);
-	}
-
-	.button-menu-header-sign a {
-		text-decoration: none;
-		color: var(--white-color);
 	}
 
 	.button-menu-header .icon-button-menu {
