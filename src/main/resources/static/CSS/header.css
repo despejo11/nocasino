@@ -412,17 +412,6 @@
 		font-size: 18px;
 	}
 
-	.nav-link-hold {
-		font-size: 18px;
-		color: var(--light-color);
-		letter-spacing: 3px;
-		font-family: 'Lilita One', sans-serif;
-	}
-
-	.nav-link-hold i {
-		color: var(--brand-color);
-	}
-
 	.icon-profile {
 		color: var(--light-hover-color);
 	}
@@ -910,13 +899,6 @@
 		height: 31px;
 		transition: all 0.5s;
 		font-size: 18px;
-	}
-
-	.nav-link-hold {
-		font-size: 18px;
-		color: var(--light-color);
-		letter-spacing: 3px;
-		font-family: 'Lilita One', sans-serif;
 	}
 
 	.nav-link-hold i {
@@ -1429,17 +1411,6 @@
 		font-size: 18px;
 	}
 
-	.nav-link-hold {
-		font-size: 18px;
-		color: var(--light-color);
-		letter-spacing: 3px;
-		font-family: 'Lilita One', sans-serif;
-	}
-
-	.nav-link-hold i {
-		color: var(--brand-color);
-	}
-
 	.icon-profile {
 		color: var(--light-hover-color);
 	}
@@ -1782,10 +1753,6 @@
 		transition: all 0.5s;
 	}
 
-	.nav-link-hold {
-		display: none;
-	}
-
 	.icon-profile {
 		color: var(--light-hover-color);
 	}
@@ -1890,4 +1857,15 @@
 
 .nav-buttons-container-mobile {
 	display: none;
+}
+
+.nav-link-hold {
+	font-size: 18px;
+	color: var(--light-color);
+	letter-spacing: 3px;
+	font-family: 'Lilita One', sans-serif;
+}
+
+.nav-link-hold i {
+	color: var(--brand-color);
 }
