@@ -27,6 +27,8 @@
 	box-shadow: 0 60px 40px -20px rgba(0, 0, 0, 0.27);
 	backdrop-filter: blur(120px);
 	margin: 20px;
+	position: relative;
+	overflow: hidden;
 }
 
 .inner-box {
@@ -77,6 +79,17 @@
 	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.27);
 	backdrop-filter: blur(120px);
 	border-radius: 9px;
+	position: relative;
+}
+
+.logo-a {
+	width: 146.5px;
+}
+
+.logo::before {
+	content: '';
+	position: absolute;
+	backdrop-filter: blur(120px);
 }
 
 .logo img {
@@ -89,6 +102,14 @@
 	letter-spacing: 2px;
 	font-family: 'Lilita One', sans-serif;
 	color: var(--light-brand-color);
+	transition: all 0.5s;
+}
+
+.logo h4:hover {
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: 'Lilita One', sans-serif;
+	color: var(--purple-brand-color);
 }
 
 .register-logo-span-n {
@@ -96,6 +117,11 @@
 	font-weight: 1000;
 	font-size: 14px;
 	text-shadow: 2px 1px 2px var(--purple-brand-color);
+	transition: all 0.5s;
+}
+
+.register-logo-span-n:hover {
+	color: var(--light-color);
 }
 
 .register-logo-span-o {
@@ -103,6 +129,11 @@
 	font-size: 14px;
 	text-shadow: 2px 1px 2px var(--purple-brand-color);
 	font-weight: 1000;
+	transition: all 0.5s;
+}
+
+.register-logo-span-o:hover {
+	color: var(--light-brand-color);
 }
 
 .heading h2 {
@@ -138,6 +169,11 @@
 	margin-bottom: 2rem;
 }
 
+.input-wrap i {
+	color: var(--white-color);
+	margin-right: 6px;
+}
+
 .input-field {
 	position: absolute;
 	width: 100%;
@@ -150,6 +186,7 @@
 	font-size: 0.95rem;
 	color: #151111;
 	transition: 0.4s;
+	border-radius: 0;
 }
 
 .main-section label {
@@ -161,6 +198,7 @@
 	color: #bbb;
 	pointer-events: none;
 	transition: 0.4s;
+	border-radius: 0;
 }
 
 .input-field.active {
