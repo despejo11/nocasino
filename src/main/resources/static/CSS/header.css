@@ -1870,14 +1870,14 @@
 	}
 
 	.nav-buttons-container-desktop {
-		display: flex;
+		display: none;
 		gap: 30px;
 		margin-top: 5px;
 	}
 }
 
 .profile {
-	display: none;
+	display: block;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -1885,5 +1885,5 @@
 }
 
 .nav-buttons-container-mobile {
-	display: block;
+	display: none;
 }

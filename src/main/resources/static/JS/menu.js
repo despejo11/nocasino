@@ -30,11 +30,22 @@ const menuOnClick = () => {
 	}
 }
 
-document.addEventListener('click', event => {
-	const dropdown = document.querySelector('.dropdown')
+let isMenuOpen = false
 
-	if (!dropdown.contains(event.target)) {
-		dropdown.style.visibility = 'hidden'
-		dropdown.style.opacity = 0
+document.addEventListener('click', event => {
+	const dropdown = document.querySelector('.dropdown-profile')
+
+	if (window.innerWidth <= 1025) {
+		if (!dropdown.contains(event.target) && isMenuOpen) {
+			dropdown.style.visibility = 'hidden'
+			dropdown.style.opacity = 0
+			isMenuOpen = false
+		} else {
+			if (dropdown.contains(event.target) && !isMenuOpen) {
+				dropdown.style.visibility = 'visible'
+				dropdown.style.opacity = 1
+				isMenuOpen = true
+			}
+		}
 	}
 })
