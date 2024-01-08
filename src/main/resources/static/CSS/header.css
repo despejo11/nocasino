@@ -1,10 +1,27 @@
 @media (min-width: 320px) and (max-width: 426px) {
-	#menu-header {
-		z-index: 2;
+	.toggle-input {
+		display: none;
 	}
 
-	.dropdown.open {
-		display: block !important;
+	.icon-profile:hover {
+		cursor: pointer;
+	}
+
+	#toggleDropdown:checked + .bx-x {
+		display: none;
+	}
+
+	#toggleDropdown:checked ~ .dropdown {
+		display: none;
+	}
+
+	#toggleMenu:checked ~ .nav-link-hold,
+	#toggleMenu:checked ~ .dropdown-link {
+		display: inline-block;
+	}
+
+	#menu-header {
+		z-index: 2;
 	}
 
 	#menu-header-bar {
