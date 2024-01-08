@@ -29,3 +29,12 @@ const menuOnClick = () => {
 		menuBg.classList.add('closed')
 	}
 }
+
+document.addEventListener('click', event => {
+	const dropdown = document.querySelector('.dropdown')
+
+	if (!dropdown.contains(event.target)) {
+		dropdown.style.visibility = 'hidden'
+		dropdown.style.opacity = 0
+	}
+})

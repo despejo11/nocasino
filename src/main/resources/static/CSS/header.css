@@ -1,23 +1,4 @@
 @media (min-width: 320px) and (max-width: 426px) {
-	#toggleDropdown:checked + .dropdown {
-		display: none;
-	}
-
-	#toggleDropdown:checked ~ .profile #profileIcon {
-		display: none;
-	}
-
-	#toggleDropdown:checked ~ .dropdown .bx-x {
-		display: block;
-	}
-
-	#toggleDropdown:checked ~ .dropdown .dropdown-id,
-	#toggleDropdown:checked ~ .dropdown .dropdown-on-account,
-	#toggleDropdown:checked ~ .dropdown .dropdown-money,
-	#toggleDropdown:checked ~ .dropdown .nav-link-profile {
-		display: block;
-	}
-
 	#menu-header {
 		z-index: 2;
 	}
@@ -325,19 +306,6 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
-	}
-
-	.bx-x {
-		color: var(--brand-color);
-		position: absolute;
-		top: 2px;
-		left: 2px;
-		font-size: 22px;
-		transition: all 0.3s;
-	}
-
-	.bx-x:hover {
-		color: var(--brand-hover-color);
 	}
 
 	.primary-navigation {
@@ -839,19 +807,6 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
-	}
-
-	.bx-x {
-		color: var(--brand-color);
-		position: absolute;
-		top: 2px;
-		left: 2px;
-		font-size: 22px;
-		transition: all 0.3s;
-	}
-
-	.bx-x:hover {
-		color: var(--brand-hover-color);
 	}
 
 	.primary-navigation {
@@ -1359,19 +1314,6 @@
 		}
 	}
 
-	.bx-x {
-		color: var(--brand-color);
-		position: absolute;
-		top: 2px;
-		left: 2px;
-		font-size: 22px;
-		transition: all 0.3s;
-	}
-
-	.bx-x:hover {
-		color: var(--brand-hover-color);
-	}
-
 	.primary-navigation {
 		text-align: center;
 		font-size: 20px;
@@ -1580,10 +1522,6 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
-	}
-
-	.dropdown .bx-x {
-		display: none;
 	}
 
 	.primary-navigation {
