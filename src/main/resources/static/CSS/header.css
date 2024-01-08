@@ -3,6 +3,10 @@
 		z-index: 2;
 	}
 
+	.dropdown.open {
+		display: block !important;
+	}
+
 	#menu-header-bar {
 		width: 45px;
 		height: 40px;

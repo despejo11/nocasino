@@ -31,25 +31,26 @@ const menuOnClick = () => {
 }
 
 const bxX = document.querySelector('.bx-x')
+
 bxX.addEventListener('click', () => {
-	const dropdown = document.querySelector('.profile-dropdown')
-	dropdown.style.display = 'none'
+	const dropdown = document.querySelector('.dropdown')
+	dropdown.classList.remove('open')
 })
 
 const profileLink = document.querySelector('.icon-profile')
 profileLink.addEventListener('click', () => {
-	const dropdown = document.querySelector('.profile-dropdown')
+	const dropdown = document.querySelector('.dropdown')
 	dropdown.style.display = 'block'
 })
 
 const navLinkHold = document.querySelector('.nav-link-hold')
 navLinkHold.addEventListener('click', () => {
-	const dropdown = document.querySelector('.profile-dropdown')
+	const dropdown = document.querySelector('.dropdown')
 	dropdown.style.display = 'block'
 })
 
 const dropdownLink = document.querySelector('.dropdown-link')
 dropdownLink.addEventListener('click', () => {
-	const dropdown = document.querySelector('.profile-dropdown')
+	const dropdown = document.querySelector('.dropdown')
 	dropdown.style.display = 'block'
 })
