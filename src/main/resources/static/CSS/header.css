@@ -431,6 +431,11 @@
 		color: var(--light-hover-color);
 	}
 
+	.icon-profile:hover {
+		background-color: var(--light-hover-color);
+		color: var(--light-brand-color);
+	}
+
 	.icon-dropdown-profile {
 		color: var(--brand-hover-color);
 	}
@@ -928,12 +933,13 @@
 		font-size: 18px;
 	}
 
-	.nav-link-hold i {
-		color: var(--brand-color);
-	}
-
 	.icon-profile {
 		color: var(--light-hover-color);
+	}
+
+	.icon-profile:hover {
+		background-color: var(--light-hover-color);
+		color: var(--light-brand-color);
 	}
 
 	.icon-dropdown-profile {
@@ -1437,6 +1443,11 @@
 		color: var(--light-hover-color);
 	}
 
+	.icon-profile:hover {
+		background-color: var(--light-hover-color);
+		color: var(--light-brand-color);
+	}
+
 	.icon-dropdown-profile {
 		color: var(--brand-hover-color);
 	}
@@ -1801,10 +1812,6 @@
 		font-size: 17px;
 	}
 
-	.nav-link-hold {
-		display: none;
-	}
-
 	.dropdown-id {
 		color: var(--brand-color);
 		padding-top: 15px;
@@ -1879,15 +1886,4 @@
 
 .nav-buttons-container-mobile {
 	display: none;
-}
-
-.nav-link-hold {
-	font-size: 18px;
-	color: var(--light-color);
-	letter-spacing: 3px;
-	font-family: 'Lilita One', sans-serif;
-}
-
-.nav-link-hold i {
-	color: var(--brand-color);
 }
