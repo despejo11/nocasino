@@ -32,12 +32,24 @@ const menuOnClick = () => {
 
 const bxX = document.querySelector('.bx-x')
 bxX.addEventListener('click', () => {
-	const nav = document.getElementById('menu-header-nav')
-	nav.style.display = 'none'
+	const dropdown = document.querySelector('.dropdown')
+	dropdown.style.display = 'none'
 })
 
 const profileLink = document.querySelector('.icon-profile')
 profileLink.addEventListener('click', () => {
-	const nav = document.getElementById('menu-header-nav')
-	nav.style.display = 'block'
+	const dropdown = document.querySelector('.dropdown')
+	dropdown.style.display = 'block'
+})
+
+const navLinkHold = document.querySelector('.nav-link-hold')
+navLinkHold.addEventListener('click', () => {
+	const dropdown = document.querySelector('.dropdown')
+	dropdown.style.display = 'block'
+})
+
+const dropdownLink = document.querySelector('.dropdown-link')
+dropdownLink.addEventListener('click', () => {
+	const dropdown = document.querySelector('.dropdown')
+	dropdown.style.display = 'block'
 })
