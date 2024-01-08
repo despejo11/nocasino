@@ -1,23 +1,21 @@
 @media (min-width: 320px) and (max-width: 426px) {
-	.toggle-input {
+	#toggleDropdown:checked + .dropdown {
 		display: none;
 	}
 
-	.icon-profile:hover {
-		cursor: pointer;
-	}
-
-	#toggleDropdown:checked + .bx-x {
+	#toggleDropdown:checked ~ .profile #profileIcon {
 		display: none;
 	}
 
-	#toggleDropdown:checked ~ .dropdown {
-		display: none;
+	#toggleDropdown:checked ~ .dropdown .bx-x {
+		display: block;
 	}
 
-	#toggleMenu:checked ~ .nav-link-hold,
-	#toggleMenu:checked ~ .dropdown-link {
-		display: inline-block;
+	#toggleDropdown:checked ~ .dropdown .dropdown-id,
+	#toggleDropdown:checked ~ .dropdown .dropdown-on-account,
+	#toggleDropdown:checked ~ .dropdown .dropdown-money,
+	#toggleDropdown:checked ~ .dropdown .nav-link-profile {
+		display: block;
 	}
 
 	#menu-header {
