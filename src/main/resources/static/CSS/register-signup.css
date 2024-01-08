@@ -25,19 +25,11 @@
 	border: 2px solid var(--light-brand-color);
 	border-radius: 3.3rem;
 	box-shadow: 0 60px 40px -20px rgba(0, 0, 0, 0.27);
-	overflow: hidden;
+	backdrop-filter: blur(120px);
+	-webkit-backdrop-filter: blur(120px);
 	margin: 20px;
-}
-
-.box::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	filter: blur(120px);
-	z-index: -1;
+	position: relative;
+	overflow: hidden;
 }
 
 .inner-box {
@@ -87,18 +79,13 @@
 	border: 1px solid var(--light-brand-color);
 	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.27);
 	backdrop-filter: blur(120px);
+	-webkit-backdrop-filter: blur(120px);
 	border-radius: 9px;
 	position: relative;
 }
 
 .logo-a {
 	width: 146.5px;
-}
-
-.logo::before {
-	content: '';
-	position: absolute;
-	filter: blur(120px);
 }
 
 .logo img {
