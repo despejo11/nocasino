@@ -25,8 +25,8 @@
 	border: 2px solid var(--light-brand-color);
 	border-radius: 3.3rem;
 	box-shadow: 0 60px 40px -20px rgba(0, 0, 0, 0.27);
-	backdrop-filter: blur(120px);
-	-webkit-backdrop-filter: blur(120px);
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
 	margin: 20px;
 	position: relative;
 	overflow: hidden;
@@ -78,8 +78,8 @@
 	padding: 10px;
 	border: 1px solid var(--light-brand-color);
 	box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.27);
-	backdrop-filter: blur(120px);
-	-webkit-backdrop-filter: blur(120px);
+	backdrop-filter: blur(90px);
+	-webkit-backdrop-filter: blur(90px);
 	border-radius: 9px;
 	position: relative;
 }
@@ -102,9 +102,6 @@
 }
 
 .logo h4:hover {
-	font-size: 14px;
-	letter-spacing: 2px;
-	font-family: 'Lilita One', sans-serif;
 	color: var(--purple-brand-color);
 }
 

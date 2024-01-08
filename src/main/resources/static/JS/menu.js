@@ -29,3 +29,15 @@ const menuOnClick = () => {
 		menuBg.classList.add('closed')
 	}
 }
+
+const bxX = document.querySelector('.bx-x')
+bxX.addEventListener('click', () => {
+	const nav = document.getElementById('menu-header-nav')
+	nav.style.display = 'none'
+})
+
+const profileLink = document.querySelector('.icon-profile')
+profileLink.addEventListener('click', () => {
+	const nav = document.getElementById('menu-header-nav')
+	nav.style.display = 'block'
+})
