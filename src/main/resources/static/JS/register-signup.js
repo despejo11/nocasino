@@ -43,6 +43,26 @@ function changeSlider() {
 bullets.forEach((bullet, index) => {
 	bullet.addEventListener('click', () => moveSlider(index))
 })
+const signInForm = document.querySelector('.sign-in-form')
+const registerForm = document.querySelector('.sign-up-form')
+
+function showLoader(form) {
+	const loader = form.querySelector('.spinner')
+	loader.style.display = 'block'
+	setTimeout(() => {
+		loader.style.display = 'none'
+	}, 3000)
+}
+
+signInForm.addEventListener('submit', e => {
+	e.preventDefault()
+	showLoader(signInForm)
+})
+
+registerForm.addEventListener('submit', e => {
+	e.preventDefault()
+	showLoader(registerForm)
+})
 
 setInterval(changeSlider, 5000)
 moveSlider(currentIndex)
