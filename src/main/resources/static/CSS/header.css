@@ -377,10 +377,6 @@
 		z-index: 2000;
 	}
 
-	.dropdown-link {
-		padding-bottom: 1px;
-	}
-
 	nav.primary-navigation ul li:hover > ul,
 	nav.primary-navigation ul li ul:focus-within {
 		opacity: 1;
@@ -530,14 +526,11 @@
 		animation: slideIn 0.5s ease-in-out;
 	}
 
-	.body-global:not(.mobile) {
-		nav.primary-navigation ul li:not(:focus-within) ul,
-		nav.primary-navigation ul li:not(:focus-within) ul ul {
-			opacity: 0;
-			visibility: hidden;
-			padding-bottom: 0;
-			animation: none;
-		}
+	.body-global:focus nav.primary-navigation ul li ul,
+	html:focus nav.primary-navigation ul li ul {
+		opacity: 0;
+		visibility: hidden;
+		padding-bottom: 0;
 	}
 }
 @media (min-width: 426px) and (max-width: 770px) {
