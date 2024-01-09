@@ -17,13 +17,8 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
-			background 0.3s;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
 		cursor: pointer;
-	}
-
-	.bxs-navigation:hover {
-		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -168,7 +163,7 @@
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 1.5px;
 		position: relative;
-		font-weight: 1000;
+		font-weight: 600;
 		font-size: 27px;
 		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -227,14 +222,9 @@
 
 	.bx-mouse {
 		color: var(--light-brand-color);
-		transition: all 0.5s;
 		margin-bottom: 10px;
 		font-size: 40px;
 		cursor: pointer;
-	}
-
-	.bx-mouse:hover {
-		color: var(--brand-hover-color);
 	}
 
 	@keyframes jump-bx {
@@ -279,13 +269,8 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
-			background 0.3s;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
 		cursor: pointer;
-	}
-
-	.bxs-navigation:hover {
-		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -430,7 +415,7 @@
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 1.5px;
 		position: relative;
-		font-weight: 1000;
+		font-weight: 600;
 		font-size: 27px;
 		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -490,14 +475,9 @@
 
 	.bx-mouse {
 		color: var(--light-brand-color);
-		transition: all 0.5s;
 		margin-bottom: 10px;
 		font-size: 40px;
 		cursor: pointer;
-	}
-
-	.bx-mouse:hover {
-		color: var(--brand-hover-color);
 	}
 
 	@keyframes jump-bx {
@@ -542,13 +522,8 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
-			background 0.3s;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
 		cursor: pointer;
-	}
-
-	.bxs-navigation:hover {
-		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -693,7 +668,7 @@
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 1.5px;
 		position: relative;
-		font-weight: 1000;
+		font-weight: 600;
 		font-size: 27px;
 		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -760,14 +735,9 @@
 
 	.bx-mouse {
 		color: var(--light-brand-color);
-		transition: all 0.5s;
 		margin-bottom: 10px;
 		font-size: 40px;
 		cursor: pointer;
-	}
-
-	.bx-mouse:hover {
-		color: var(--brand-hover-color);
 	}
 
 	@keyframes jump-bx {
@@ -815,13 +785,8 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
-			background 0.3s;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
 		cursor: pointer;
-	}
-
-	.bxs-navigation:hover {
-		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -966,7 +931,7 @@
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 1.5px;
 		position: relative;
-		font-weight: 1000;
+		font-weight: 600;
 		font-size: 27px;
 		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
