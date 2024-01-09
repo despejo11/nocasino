@@ -163,7 +163,7 @@
 		font-family: 'Lilita One', sans-serif;
 		letter-spacing: 1.5px;
 		position: relative;
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 27px;
 		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
 		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -250,6 +250,7 @@
 		animation: jump-bx 1s infinite;
 	}
 }
+
 @media (min-width: 426px) and (max-width: 770px) {
 	.start-casino {
 		display: flex;
@@ -503,6 +504,7 @@
 		animation: jump-bx 1s infinite;
 	}
 }
+
 @media (min-width: 770px) and (max-width: 1025px) {
 	.start-casino {
 		display: flex;
@@ -763,6 +765,7 @@
 		animation: jump-bx 1s infinite;
 	}
 }
+
 @media (min-width: 1025px) {
 	.start-casino {
 		display: flex;
@@ -1025,6 +1028,7 @@
 		animation: jump-bx 1s infinite;
 	}
 }
+
 @media (min-width: 1200px) {
 	.start-casino-image {
 		max-width: 650px;

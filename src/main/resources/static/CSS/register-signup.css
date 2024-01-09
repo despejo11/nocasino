@@ -543,16 +543,19 @@
 		bottom: 280px;
 	}
 }
+
 @media (min-width: 391px) and (max-width: 530px) {
 	.spinner {
 		margin-bottom: 30px;
 	}
 }
+
 @media (max-width: 391px) {
 	.spinner-reg {
 		margin-bottom: 30px;
 	}
 }
+
 @media (max-width: 353px) {
 	.spinner-reg {
 		margin-bottom: 45px;
