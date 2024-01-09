@@ -17,8 +17,13 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
+			background 0.3s;
 		cursor: pointer;
+	}
+
+	.bxs-navigation:hover {
+		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -228,9 +233,8 @@
 		cursor: pointer;
 	}
 
-	.bx-mouse:active {
+	.bx-mouse:hover {
 		color: var(--brand-hover-color);
-		transition: all 0.5s;
 	}
 
 	@keyframes jump-bx {
@@ -275,8 +279,13 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
+			background 0.3s;
 		cursor: pointer;
+	}
+
+	.bxs-navigation:hover {
+		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -487,9 +496,8 @@
 		cursor: pointer;
 	}
 
-	.bx-mouse:active {
+	.bx-mouse:hover {
 		color: var(--brand-hover-color);
-		transition: all 0.5s;
 	}
 
 	@keyframes jump-bx {
@@ -534,8 +542,13 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
+			background 0.3s;
 		cursor: pointer;
+	}
+
+	.bxs-navigation:hover {
+		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -753,9 +766,8 @@
 		cursor: pointer;
 	}
 
-	.bx-mouse:active {
+	.bx-mouse:hover {
 		color: var(--brand-hover-color);
-		transition: all 0.5s;
 	}
 
 	@keyframes jump-bx {
@@ -803,8 +815,13 @@
 		background-color: var(--light-brand-color);
 		border-radius: 50%;
 		padding: 7px;
-		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out,
+			background 0.3s;
 		cursor: pointer;
+	}
+
+	.bxs-navigation:hover {
+		background-color: #f695c0;
 	}
 
 	.rotate-bx-nav {
@@ -1018,7 +1035,6 @@
 
 	.bx-mouse:hover {
 		color: var(--brand-hover-color);
-		transition: all 0.5s;
 	}
 
 	@keyframes jump-bx {

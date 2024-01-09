@@ -382,9 +382,9 @@
 	}
 
 	nav.primary-navigation ul li:hover > ul,
-	nav.primary-navigation ul li ul:hover {
-		visibility: visible;
+	nav.primary-navigation ul li ul:focus-within {
 		opacity: 1;
+		visibility: visible;
 		padding-bottom: 20px;
 		animation: slideIn 0.5s ease-in-out;
 	}
@@ -400,6 +400,19 @@
 	nav.primary-navigation ul li ul li .nav-link:hover {
 		padding-left: 10px;
 		transition: all 0.5s ease;
+	}
+
+	.nav-link-profile:focus,
+	.dropdown-profile:focus-within {
+		outline: none;
+	}
+
+	.nav-link-profile:focus + .dropdown-profile,
+	.dropdown-profile:focus-within {
+		opacity: 1;
+		visibility: visible;
+		padding-bottom: 20px;
+		animation: slideIn 0.5s ease-in-out;
 	}
 
 	.nav-buttons-container-desktop {
