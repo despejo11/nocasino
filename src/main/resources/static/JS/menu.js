@@ -32,20 +32,15 @@ const menuOnClick = () => {
 
 let isMenuOpen = false
 
-document.addEventListener('click', event => {
-	const dropdown = document.querySelector('.dropdown-profile')
+document.addEventListener('DOMContentLoaded', () => {
+	const menuButton = document.getElementById('menu-button')
+	const menu = document.getElementById('menu')
 
-	if (window.innerWidth <= 1025) {
-		if (!dropdown.contains(event.target) && isMenuOpen) {
-			dropdown.style.visibility = 'hidden'
-			dropdown.style.opacity = 0
-			isMenuOpen = false
-		} else {
-			if (dropdown.contains(event.target) && !isMenuOpen) {
-				dropdown.style.visibility = 'visible'
-				dropdown.style.opacity = 1
-				isMenuOpen = true
-			}
-		}
+	menuButton && menuButton.addEventListener('click', toggleMenu)
+
+	function toggleMenu() {
+		isMenuOpen = !isMenuOpen
+
+		menu && (menu.style.display = isMenuOpen ? 'block' : 'none')
 	}
 })

@@ -16,6 +16,11 @@ font-family: 'Silkscreen', sans-serif;
 	font-family: 'Poppins', sans-serif;
 }
 
+.background-pattern-main {
+	background-image: url(/src/main/resources/static/IMG/backround-pattern-start.png);
+	background-size: cover;
+}
+
 * {
 	padding: 0;
 	margin: 0;

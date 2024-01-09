@@ -1,8 +1,1051 @@
 @media (min-width: 320px) and (max-width: 426px) {
+	.start-casino {
+		display: flex;
+		flex-direction: column;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.start-casino-nav {
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	.bxs-navigation {
+		font-size: 30px;
+		color: var(--medium-color);
+		background-color: var(--light-brand-color);
+		border-radius: 50%;
+		padding: 7px;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		cursor: pointer;
+	}
+
+	.rotate-bx-nav {
+		color: var(--brand-color);
+		transform: rotate(360deg);
+	}
+
+	.start-casino-nav p {
+		font-size: 25px;
+		color: var(--white-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	.start-casino-content {
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	.start-casino-title {
+		color: var(--light-brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 42px;
+		position: relative;
+		padding-bottom: 10px;
+		max-width: 320px;
+		margin: auto;
+	}
+
+	.start-casino-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 250px;
+		border-bottom: 2px solid var(--brand-color);
+	}
+
+	.start-casino-span-online {
+		color: var(--light-color);
+	}
+
+	.start-casino-span-demo {
+		color: var(--brand-color);
+	}
+
+	.start-casino-span-n {
+		background: linear-gradient(
+			90deg,
+			var(--brand-color),
+			var(--light-brand-color),
+			var(--light-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-n 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-n {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--brand-color);
+		}
+		50% {
+			color: var(--light-brand-color);
+		}
+		75% {
+			color: var(--light-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-span-o {
+		color: var(--brand-color);
+		background: linear-gradient(
+			90deg,
+			var(--medium-color),
+			var(--light-brand-color),
+			var(--brand-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-o 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-o {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--medium-color);
+		}
+		50% {
+			color: var(--brand-color);
+		}
+		75% {
+			color: var(--light-brand-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-description {
+		padding-top: 25px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 21px;
+		max-width: 370px;
+		margin: auto;
+		color: var(--light-color);
+	}
+
+	.start-casino-instructions {
+		padding-top: 10px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		max-width: 360px;
+		margin: auto;
+		font-size: 18px;
+		color: var(--light-hover-color);
+	}
+
+	.start-casino-button {
+		padding: 15px 25px;
+		border: unset;
+		border-radius: 15px;
+		color: var(--light-brand-color);
+		z-index: 0;
+		background: var(--brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1.5px;
+		position: relative;
+		font-weight: 1000;
+		font-size: 27px;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+		overflow: hidden;
+		cursor: pointer;
+		margin-top: 40px;
+	}
+
+	.start-casino-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		border-radius: 15px;
+		background-color: var(--light-color);
+		z-index: -1;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+	}
+
+	.start-casino-button:hover {
+		color: var(--brand-hover-color);
+	}
+
+	.start-casino-button:hover::before {
+		width: 100%;
+	}
+
+	.start-casino-image {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: auto;
+		animation: floatAnimation 4s infinite alternate;
+	}
+
+	@keyframes floatAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(13px);
+		}
+	}
+
+	.mouse-link-start {
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+		margin: auto;
+		align-items: center;
+	}
+
+	.bx-mouse {
+		color: var(--light-brand-color);
+		transition: all 0.5s;
+		margin-bottom: 10px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.bx-mouse:hover {
+		color: var(--brand-hover-color);
+		transition: all 0.5s;
+	}
+
+	@keyframes jump-bx {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-15px);
+		}
+		60% {
+			transform: translateY(-10px);
+		}
+	}
+
+	.bx-chevron-down {
+		color: var(--white-color);
+		font-size: 35px;
+		display: inline-block;
+		animation: jump-bx 1s infinite;
+	}
 }
 @media (min-width: 426px) and (max-width: 770px) {
+	.start-casino {
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.start-casino-nav {
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	.bxs-navigation {
+		font-size: 32px;
+		color: var(--medium-color);
+		background-color: var(--light-brand-color);
+		border-radius: 50%;
+		padding: 7px;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		cursor: pointer;
+	}
+
+	.rotate-bx-nav {
+		color: var(--brand-color);
+		transform: rotate(360deg);
+	}
+
+	.start-casino-nav p {
+		font-size: 28px;
+		color: var(--white-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	.start-casino-content {
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	.start-casino-title {
+		color: var(--light-brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 46px;
+		position: relative;
+		padding-bottom: 10px;
+		max-width: 320px;
+		margin: auto;
+	}
+
+	.start-casino-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+		border-bottom: 2px solid var(--brand-color);
+	}
+
+	.start-casino-span-online {
+		color: var(--light-color);
+	}
+
+	.start-casino-span-demo {
+		color: var(--brand-color);
+	}
+
+	.start-casino-span-n {
+		background: linear-gradient(
+			90deg,
+			var(--brand-color),
+			var(--light-brand-color),
+			var(--light-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-n 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-n {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--brand-color);
+		}
+		50% {
+			color: var(--light-brand-color);
+		}
+		75% {
+			color: var(--light-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-span-o {
+		color: var(--brand-color);
+		background: linear-gradient(
+			90deg,
+			var(--medium-color),
+			var(--light-brand-color),
+			var(--brand-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-o 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-o {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--medium-color);
+		}
+		50% {
+			color: var(--brand-color);
+		}
+		75% {
+			color: var(--light-brand-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-description {
+		padding-top: 25px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 22px;
+		max-width: 390px;
+		margin: auto;
+		color: var(--light-color);
+	}
+
+	.start-casino-instructions {
+		padding-top: 15px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		max-width: 370px;
+		margin: auto;
+		font-size: 19px;
+		color: var(--light-hover-color);
+	}
+
+	.start-casino-button {
+		padding: 17px 27px;
+		border: unset;
+		border-radius: 15px;
+		color: var(--light-brand-color);
+		z-index: 0;
+		background: var(--brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1.5px;
+		position: relative;
+		font-weight: 1000;
+		font-size: 27px;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+		overflow: hidden;
+		cursor: pointer;
+		margin-top: 40px;
+	}
+
+	.start-casino-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		border-radius: 15px;
+		background-color: var(--light-color);
+		z-index: -1;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+	}
+
+	.start-casino-button:hover {
+		color: var(--brand-hover-color);
+	}
+
+	.start-casino-button:hover::before {
+		width: 100%;
+	}
+
+	.start-casino-image {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: auto;
+		max-width: 450px;
+		animation: floatAnimation 4s infinite alternate;
+	}
+
+	@keyframes floatAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(13px);
+		}
+	}
+
+	.mouse-link-start {
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+		margin: auto;
+		align-items: center;
+	}
+
+	.bx-mouse {
+		color: var(--light-brand-color);
+		transition: all 0.5s;
+		margin-bottom: 10px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.bx-mouse:hover {
+		color: var(--brand-hover-color);
+		transition: all 0.5s;
+	}
+
+	@keyframes jump-bx {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-15px);
+		}
+		60% {
+			transform: translateY(-10px);
+		}
+	}
+
+	.bx-chevron-down {
+		color: var(--white-color);
+		font-size: 35px;
+		display: inline-block;
+		animation: jump-bx 1s infinite;
+	}
 }
 @media (min-width: 770px) and (max-width: 1025px) {
+	.start-casino {
+		display: flex;
+		flex-direction: column;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.start-casino-nav {
+		margin-top: 60px;
+		text-align: center;
+	}
+
+	.bxs-navigation {
+		font-size: 35px;
+		color: var(--medium-color);
+		background-color: var(--light-brand-color);
+		border-radius: 50%;
+		padding: 7px;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		cursor: pointer;
+	}
+
+	.rotate-bx-nav {
+		color: var(--brand-color);
+		transform: rotate(360deg);
+	}
+
+	.start-casino-nav p {
+		font-size: 30px;
+		color: var(--white-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	.start-casino-content {
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	.start-casino-title {
+		color: var(--light-brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 50px;
+		position: relative;
+		padding-bottom: 10px;
+		max-width: 370px;
+		margin: auto;
+	}
+
+	.start-casino-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 360px;
+		border-bottom: 2px solid var(--brand-color);
+	}
+
+	.start-casino-span-online {
+		color: var(--light-color);
+	}
+
+	.start-casino-span-demo {
+		color: var(--brand-color);
+	}
+
+	.start-casino-span-n {
+		background: linear-gradient(
+			90deg,
+			var(--brand-color),
+			var(--light-brand-color),
+			var(--light-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-n 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-n {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--brand-color);
+		}
+		50% {
+			color: var(--light-brand-color);
+		}
+		75% {
+			color: var(--light-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-span-o {
+		color: var(--brand-color);
+		background: linear-gradient(
+			90deg,
+			var(--medium-color),
+			var(--light-brand-color),
+			var(--brand-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-o 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-o {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--medium-color);
+		}
+		50% {
+			color: var(--brand-color);
+		}
+		75% {
+			color: var(--light-brand-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-description {
+		padding-top: 25px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 25px;
+		max-width: 440px;
+		margin: auto;
+		color: var(--light-color);
+	}
+
+	.start-casino-instructions {
+		padding-top: 15px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		max-width: 390px;
+		margin: auto;
+		font-size: 22px;
+		color: var(--light-hover-color);
+	}
+
+	.start-casino-button {
+		padding: 20px 30px;
+		border: unset;
+		border-radius: 15px;
+		color: var(--light-brand-color);
+		z-index: 0;
+		background: var(--brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1.5px;
+		position: relative;
+		font-weight: 1000;
+		font-size: 27px;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+		overflow: hidden;
+		cursor: pointer;
+		margin-top: 40px;
+	}
+
+	.start-casino-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		border-radius: 15px;
+		background-color: var(--light-color);
+		z-index: -1;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+	}
+
+	.start-casino-button:hover {
+		color: var(--brand-hover-color);
+	}
+
+	.start-casino-button:hover::before {
+		width: 100%;
+	}
+
+	.start-casino-image {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: auto;
+		max-width: 500px;
+		animation: floatAnimation 4s infinite alternate;
+	}
+
+	@keyframes floatAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(13px);
+		}
+	}
+
+	.bx-chevron-down {
+		color: var(--white-color);
+		font-size: 35px;
+		display: inline-block;
+		animation: jump-bx 1s infinite;
+	}
+
+	.mouse-link-start {
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+		margin: auto;
+		align-items: center;
+	}
+
+	.bx-mouse {
+		color: var(--light-brand-color);
+		transition: all 0.5s;
+		margin-bottom: 10px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.bx-mouse:hover {
+		color: var(--brand-hover-color);
+		transition: all 0.5s;
+	}
+
+	@keyframes jump-bx {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-15px);
+		}
+		60% {
+			transform: translateY(-10px);
+		}
+	}
+
+	.bx-chevron-down {
+		color: var(--white-color);
+		font-size: 35px;
+		display: inline-block;
+		animation: jump-bx 1s infinite;
+	}
 }
 @media (min-width: 1025px) {
+	.start-casino {
+		display: flex;
+		padding-left: 30px;
+		padding-right: 30px;
+		justify-content: center;
+		align-items: center;
+		gap: 160px;
+	}
+
+	.start-casino-nav {
+		margin-top: 60px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.bxs-navigation {
+		font-size: 37px;
+		color: var(--medium-color);
+		background-color: var(--light-brand-color);
+		border-radius: 50%;
+		padding: 7px;
+		transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+		cursor: pointer;
+	}
+
+	.rotate-bx-nav {
+		color: var(--brand-color);
+		transform: rotate(360deg);
+	}
+
+	.start-casino-nav p {
+		font-size: 32px;
+		color: var(--white-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		margin: 10px 0;
+	}
+
+	.start-casino-content {
+		text-align: center;
+		padding-top: 60px;
+	}
+
+	.start-casino-title {
+		color: var(--light-brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 55px;
+		position: relative;
+		padding-bottom: 20px;
+		max-width: 370px;
+		margin: auto;
+	}
+
+	.start-casino-title::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 380px;
+		border-bottom: 2px solid var(--brand-color);
+	}
+
+	.start-casino-span-online {
+		color: var(--light-color);
+	}
+
+	.start-casino-span-demo {
+		color: var(--brand-color);
+	}
+
+	.start-casino-span-n {
+		background: linear-gradient(
+			90deg,
+			var(--brand-color),
+			var(--light-brand-color),
+			var(--light-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-n 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-n {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--brand-color);
+		}
+		50% {
+			color: var(--light-brand-color);
+		}
+		75% {
+			color: var(--light-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-span-o {
+		color: var(--brand-color);
+		background: linear-gradient(
+			90deg,
+			var(--medium-color),
+			var(--light-brand-color),
+			var(--brand-color)
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: textGradientShift-o 4s infinite linear;
+		display: inline-block;
+	}
+
+	@keyframes textGradientShift-o {
+		0% {
+			color: transparent;
+		}
+		25% {
+			color: var(--medium-color);
+		}
+		50% {
+			color: var(--brand-color);
+		}
+		75% {
+			color: var(--light-brand-color);
+		}
+		100% {
+			color: transparent;
+		}
+	}
+
+	.start-casino-description {
+		padding-top: 30px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		font-size: 27px;
+		max-width: 490px;
+		margin: auto;
+		color: var(--light-color);
+	}
+
+	.start-casino-instructions {
+		padding-top: 20px;
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1px;
+		min-width: 410px;
+		margin: auto;
+		font-size: 24px;
+		color: var(--light-hover-color);
+	}
+
+	.start-casino-button {
+		padding: 22px 32px;
+		border: unset;
+		border-radius: 15px;
+		color: var(--light-brand-color);
+		z-index: 0;
+		background: var(--brand-color);
+		font-family: 'Lilita One', sans-serif;
+		letter-spacing: 1.5px;
+		position: relative;
+		font-weight: 1000;
+		font-size: 27px;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+		overflow: hidden;
+		cursor: pointer;
+		margin-top: 50px;
+	}
+
+	.start-casino-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		border-radius: 15px;
+		background-color: var(--light-color);
+		z-index: -1;
+		-webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+		transition: all 250ms;
+	}
+
+	.start-casino-button:hover {
+		color: var(--brand-hover-color);
+	}
+
+	.start-casino-button:hover::before {
+		width: 100%;
+	}
+
+	.start-casino-image {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: auto;
+		max-width: 500px;
+		animation: floatAnimation 4s infinite alternate;
+	}
+
+	@keyframes floatAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(13px);
+		}
+	}
+
+	.mouse-link-start {
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+		width: 30px;
+		margin: auto;
+		align-items: center;
+	}
+
+	.bx-mouse {
+		color: var(--light-brand-color);
+		transition: all 0.5s;
+		margin-bottom: 10px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.bx-mouse:hover {
+		color: var(--brand-hover-color);
+		transition: all 0.5s;
+	}
+
+	@keyframes jump-bx {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(-15px);
+		}
+		60% {
+			transform: translateY(-10px);
+		}
+	}
+
+	.bx-chevron-down {
+		color: var(--white-color);
+		font-size: 35px;
+		display: inline-block;
+		animation: jump-bx 1s infinite;
+	}
+}
+@media (min-width: 1200px) {
+	.start-casino-image {
+		max-width: 650px;
+	}
 }

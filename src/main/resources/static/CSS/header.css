@@ -374,6 +374,7 @@
 		border-radius: 7px;
 		border: 2px solid var(--white-color);
 		width: 162px;
+		z-index: 2000;
 	}
 
 	.dropdown-link {
@@ -880,6 +881,7 @@
 		border-radius: 7px;
 		border: 2px solid var(--white-color);
 		width: 172px;
+		z-index: 2000;
 	}
 
 	.dropdown-link {
@@ -1386,6 +1388,7 @@
 		border-radius: 7px;
 		border: 2px solid var(--white-color);
 		width: 182px;
+		z-index: 2000;
 	}
 
 	.dropdown-link {
@@ -1742,6 +1745,7 @@
 		border-radius: 7px;
 		border: 2px solid var(--white-color);
 		width: 182px;
+		z-index: 2000;
 	}
 
 	.dropdown-link {
