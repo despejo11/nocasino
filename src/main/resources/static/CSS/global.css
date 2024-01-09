@@ -17,7 +17,7 @@ font-family: 'Silkscreen', sans-serif;
 }
 
 .background-pattern-main {
-	background-image: url(/src/main/resources/static/IMG/backround-pattern-start.png);
+	background-image: url(../IMG/backround-pattern-start.png);
 	background-size: cover;
 }
 

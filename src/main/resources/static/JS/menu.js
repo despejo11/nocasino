@@ -29,18 +29,3 @@ const menuOnClick = () => {
 		menuBg.classList.add('closed')
 	}
 }
-
-let isMenuOpen = false
-
-document.addEventListener('DOMContentLoaded', () => {
-	const menuButton = document.getElementById('menu-button')
-	const menu = document.getElementById('menu')
-
-	menuButton && menuButton.addEventListener('click', toggleMenu)
-
-	function toggleMenu() {
-		isMenuOpen = !isMenuOpen
-
-		menu && (menu.style.display = isMenuOpen ? 'block' : 'none')
-	}
-})
