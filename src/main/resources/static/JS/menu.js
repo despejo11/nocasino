@@ -29,3 +29,19 @@ const menuOnClick = () => {
 		menuBg.classList.add('closed')
 	}
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	document.addEventListener('click', event => {
+		const profileDropdown = document.getElementById('profileDropdown')
+
+		if (!profileDropdown.contains(event.target)) {
+			profileDropdown.classList.remove('active')
+		}
+	})
+
+	document
+		.getElementById('profileDropdown')
+		.addEventListener('click', function () {
+			this.classList.toggle('active')
+		})
+})

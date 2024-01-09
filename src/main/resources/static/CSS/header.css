@@ -308,6 +308,13 @@
 		}
 	}
 
+	.dropdown-profile.active {
+		opacity: 1;
+		visibility: visible;
+		padding-bottom: 20px;
+		animation: slideIn 0.5s ease-in-out;
+	}
+
 	.primary-navigation {
 		text-align: center;
 		font-size: 20px;
@@ -377,10 +384,14 @@
 		z-index: 2000;
 	}
 
+	.dropdown-link {
+		padding-bottom: 1px;
+	}
+
 	nav.primary-navigation ul li:hover > ul,
-	nav.primary-navigation ul li ul:focus-within {
-		opacity: 1;
+	nav.primary-navigation ul li ul:hover {
 		visibility: visible;
+		opacity: 1;
 		padding-bottom: 20px;
 		animation: slideIn 0.5s ease-in-out;
 	}
@@ -396,19 +407,6 @@
 	nav.primary-navigation ul li ul li .nav-link:hover {
 		padding-left: 10px;
 		transition: all 0.5s ease;
-	}
-
-	.nav-link-profile:focus,
-	.dropdown-profile:focus-within {
-		outline: none;
-	}
-
-	.nav-link-profile:focus + .dropdown-profile,
-	.dropdown-profile:focus-within {
-		opacity: 1;
-		visibility: visible;
-		padding-bottom: 20px;
-		animation: slideIn 0.5s ease-in-out;
 	}
 
 	.nav-buttons-container-desktop {
@@ -517,22 +515,8 @@
 	.icon-dropdown-wrapper {
 		color: var(--purple-brand-color);
 	}
-
-	nav.primary-navigation ul li:focus-within ul,
-	nav.primary-navigation ul li ul:focus-within {
-		opacity: 1;
-		visibility: visible;
-		padding-bottom: 20px;
-		animation: slideIn 0.5s ease-in-out;
-	}
-
-	.body-global:focus nav.primary-navigation ul li ul,
-	html:focus nav.primary-navigation ul li ul {
-		opacity: 0;
-		visibility: hidden;
-		padding-bottom: 0;
-	}
 }
+
 @media (min-width: 426px) and (max-width: 770px) {
 	#menu-header {
 		z-index: 10000;
